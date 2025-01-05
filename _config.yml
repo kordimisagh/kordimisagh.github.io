@@ -49,7 +49,7 @@ search: true
 
 # Header Image
 header:
-  overlay_image: assets/images/IMG_4965.jpg
+  overlay_image: /assets/images/IMG_4965.jpg
   overlay_filter: 0.5
   caption: "Exploring AI and Bioinformatics"
 
