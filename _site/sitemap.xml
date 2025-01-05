@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4005/sample/showcase/2025/01/05/sample-post.html</loc>
+<loc>http://localhost:4008/sample/showcase/2025/01/05/sample-post.html</loc>
 <lastmod>2025-01-05T00:00:00-08:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4005/about/</loc>
+<loc>http://localhost:4008/about/</loc>
 </url>
 <url>
-<loc>http://localhost:4005/collections/</loc>
+<loc>http://localhost:4008/collections/</loc>
 </url>
 <url>
-<loc>http://localhost:4005/</loc>
+<loc>http://localhost:4008/</loc>
 </url>
 <url>
-<loc>http://localhost:4005/posts/</loc>
+<loc>http://localhost:4008/posts/</loc>
 </url>
 <url>
-<loc>http://localhost:4005/projects/</loc>
+<loc>http://localhost:4008/projects/</loc>
 </url>
 <url>
-<loc>http://localhost:4005/projects/</loc>
+<loc>http://localhost:4008/quick-start/</loc>
+</url>
+<url>
+<loc>http://localhost:4008/projects/</loc>
 </url>
 </urlset>

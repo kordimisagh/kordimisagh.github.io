@@ -28,12 +28,13 @@ author:
   github: kordimisagh
   linkedin: https://www.linkedin.com/in/misagh-kordi-752448109/
 
-# Navigation
+
 header_pages:
   - index.md
   - about.md
   - posts.md
   - collections.md
+  - quick-start.md
 
 # Features
 show_excerpts: true
