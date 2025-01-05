@@ -16,8 +16,7 @@ plugins:
   - jekyll-feed
   - jekyll-archives
   - jekyll-seo-tag
-  - jekyll-gist
-  - jekyll-paginate-v2
+  - jekyll-remote-theme
 
 # Author
 author:
@@ -36,16 +35,18 @@ header_pages:
   - posts.md
   - collections.md
 
-# Social links
-social_links:
-  - github: kordimisagh
-  - linkedin: https://www.linkedin.com/in/misagh-kordi-752448109/
-
 # Features
 show_excerpts: true
-paginate: 5
-paginate_path: "/page:num/"
 search: true
+
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/page/:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 
 # Header Image
 header:
