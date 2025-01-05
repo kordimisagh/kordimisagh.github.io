@@ -1,5 +1,5 @@
 title: "Misagh Kordi"
-email: "misaghkordi1987@gmial.com"
+email: "misaghkordi1987@gmail.com"
 description: >-
   Personal website showcasing projects, references, and resources on AI, LLMs, and bioinformatics.
 baseurl: ""
@@ -7,31 +7,51 @@ url: "https://kordimisagh.github.io"
 
 # Theme settings
 remote_theme: "mmistakes/minimal-mistakes"
+
+# Plugins
 plugins:
   - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-archives
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-paginate-v2
 
-# Optional settings
+# Author
 author:
   name: "Misagh Kordi"
   avatar: "/assets/images/IMG_3932.jpg"
-
-# Theme settings
-remote_theme: mmistakes/minimal-mistakes
-plugins:
-  - jekyll-include-cache
+  bio: "Researcher in AI, LLMs, and Bioinformatics"
+  location: "California, USA"
+  email: "misaghkordi1987@gmail.com"
+  github: kordimisagh
+  linkedin: https://www.linkedin.com/in/misagh-kordi-752448109/
 
 # Navigation
 header_pages:
+  - index.md
   - about.md
-  - posts.md
-  - collections.md
+  - projects.md
+  - references.md
 
 # Social links
 social_links:
   - github: kordimisagh
   - linkedin: https://www.linkedin.com/in/misagh-kordi-752448109/
 
-# Additional Features
+# Features
 show_excerpts: true
 paginate: 5
+paginate_path: "/page:num/"
 search: true
+
+# Header Image
+header:
+  overlay_image: assets/images/IMG_4965.jpg
+  overlay_filter: 0.5
+  caption: "Exploring AI and Bioinformatics"
+
+# Google Analytics (optional)
+google_analytics: UA-XXXXXX-Y
