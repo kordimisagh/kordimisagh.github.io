@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resources</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <h1>Resources</h1>
+  <ul>
+    <li><a href="https://arxiv.org/">arXiv</a> - Research papers database.</li>
+    <li><a href="https://nature.com/">Nature</a> - Scientific journal.</li>
+    <li><a href="https://github.com/">GitHub</a> - Code repositories.</li>
+  </ul>
+  <a href="index.html">Back to Home</a>
+</body>
+</html>

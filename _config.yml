@@ -1,0 +1,19 @@
+title: "Misagh Kordi"
+email: "misaghkordi1987@gmail.com"
+description: >-
+  Personal website showcasing projects, references, and resources on AI, LLMs, and bioinformatics.
+baseurl: ""
+url: "https://kordimisagh.github.io"
+
+# Theme settings
+theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
+
+# Social links
+social_links:
+  - github: kordimisagh
+  - linkedin: your-linkedin-id
+
+# Plugins
+plugins:
+  - jekyll-include-cache
