@@ -12,7 +12,7 @@ plugins:
 
 # Optional settings
 author:
-  name: "Zahra Fayaziboroujeni"
+  name: "Misagh Kordi"
   avatar: "/assets/images/profile.jpg"
 
 show_excerpts: true
