@@ -1,10 +1,10 @@
 ---
 layout: single
-title: "References"
-permalink: /1/
+title: "Projects"
+permalink: /projects/
 ---
 
-### Useful Papers and Resources
-- [Paper: LLM Hallucinations](https://arxiv.org/abs/2301.12345)
-- [Video: Diffusion Models Explained](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
-- [Hugging Face Models](https://huggingface.co/)
+### LLM Optimization for Bioinformatics
+This project focuses on optimizing transformer architectures for analyzing biological sequences.
+
+[View Model on Hugging Face](https://huggingface.co/your-model-link)

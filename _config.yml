@@ -13,7 +13,25 @@ plugins:
 # Optional settings
 author:
   name: "Misagh Kordi"
-  avatar: "/assets/images/profile.jpg"
+  avatar: "/assets/images/IMG_3932.jpg"
 
+# Theme settings
+remote_theme: mmistakes/minimal-mistakes
+plugins:
+  - jekyll-include-cache
+
+# Navigation
+header_pages:
+  - about.md
+  - posts.md
+  - collections.md
+
+# Social links
+social_links:
+  - github: kordimisagh
+  - linkedin: https://www.linkedin.com/in/misagh-kordi-752448109/
+
+# Additional Features
 show_excerpts: true
 paginate: 5
+search: true
