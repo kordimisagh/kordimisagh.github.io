@@ -33,12 +33,21 @@ header_pages:
   - index.md
   - about.md
   - posts.md
-  - collections.md
-  - quick-start.md
+  - tags.md
+  - archive.md
+  - project.md
 
 # Features
 show_excerpts: true
 search: true
+
+jekyll-archives:
+  enabled:
+    - tags
+  layouts:
+    tag: tag_archive
+  permalinks:
+    tag: '/tags/:name/'
 
 pagination:
   enabled: true

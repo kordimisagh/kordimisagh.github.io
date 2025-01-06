@@ -1,0 +1,57 @@
+/* Global Font Settings */
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px; /* Base font size */
+    line-height: 1.6; /* Line spacing */
+    font-weight: 400; /* Default font weight */
+    color: #333; /* Text color */
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* Slightly bolder headings */
+    line-height: 1.4;
+  }
+  
+  /* Links */
+  a {
+    color: #007bff; /* Default link color */
+    text-decoration: none;
+  
+    &:hover {
+      color: #0056b3; /* Darker color on hover */
+      text-decoration: underline;
+    }
+  }
+  
+  /* Posts Titles */
+  .post-title,
+  .archive__item-title {
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  
+  /* Archive List */
+  .archive__item {
+    margin-bottom: 1.5em;
+    padding: 1.5em;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Smaller Metadata Text */
+  .archive__item-meta {
+    font-size: 0.875em;
+    color: #6c757d;
+  }
+  
+  /* Buttons */
+  .btn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+  }
+  
