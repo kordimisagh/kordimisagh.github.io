@@ -1,10 +1,16 @@
 ---
-layout: archive
+layout: default
 ---
 
-{{ content }}
+<h1 class="page-title">Tag: {{ page.tag }}</h1>
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% include posts-tag.html taxonomy=page.taxonomy type=entries_layout %}
+<div class="entries">
+  {% for post in site.posts %}
+    {% if post.tags contains page.tag %}
+      <article class="post">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p>{{ post.excerpt }}</p>
+      </article>
+    {% endif %}
+  {% endfor %}
 </div>

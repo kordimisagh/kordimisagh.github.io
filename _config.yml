@@ -41,14 +41,21 @@ header_pages:
 show_excerpts: true
 search: true
 
+# Archives for Tags
+collections:
+  tags:
+    output: true
+    permalink: /tags/:path/
+
 jekyll-archives:
   enabled:
     - tags
   layouts:
-    tag: tag_archive
+    tag: tag
   permalinks:
     tag: '/tags/:name/'
 
+# Pagination
 pagination:
   enabled: true
   per_page: 5

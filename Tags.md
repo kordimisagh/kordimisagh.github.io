@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: tags
 title: "Tags"
 permalink: /tags/
 ---
+
 
 <h1>Tags</h1>
 

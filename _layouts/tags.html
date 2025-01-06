@@ -1,7 +1,16 @@
 ---
-layout: archive
+layout: default
+title: "Tags"
+permalink: /tags/
 ---
 
-{{ content }}
+<h1 class="page-title">{{ page.title }}</h1>
 
-{% include posts-taxonomy.html taxonomies=site.tags %}
+<ul class="taxonomy-index">
+  {% assign sorted_tags = site.tags | sort %}
+  {% for tag in sorted_tags %}
+    <li>
+      <a href="{{ site.baseurl }}/tags/{{ tag[0] | slugify }}/">{{ tag[0] }}</a> ({{ tag[1].size }})
+    </li>
+  {% endfor %}
+</ul>
