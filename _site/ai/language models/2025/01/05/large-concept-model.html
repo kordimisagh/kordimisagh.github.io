@@ -1,0 +1,369 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Large Concept Models: Exploring Semantic Representations Beyond Tokens - Misagh Kordi</title>
+<meta name="description" content="Exploring higher-level semantic representations with Large Concept Models—moving beyond token-based LLMs.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Misagh Kordi">
+<meta property="og:title" content="Large Concept Models: Exploring Semantic Representations Beyond Tokens">
+<meta property="og:url" content="http://localhost:4029/ai/language%20models/2025/01/05/large-concept-model.html">
+
+
+  <meta property="og:description" content="Exploring higher-level semantic representations with Large Concept Models—moving beyond token-based LLMs.">
+
+
+
+  <meta property="og:image" content="http://localhost:4029/assets/images/large-concept-model.jpg">
+
+
+
+
+
+  <meta property="article:published_time" content="2025-01-05T00:00:00-08:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4029/ai/language%20models/2025/01/05/large-concept-model.html">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Misagh Kordi Feed">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- Add Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Misagh Kordi
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/Posts/"
+                
+                
+              >Posts</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/Archive/"
+                
+                
+              >Archive</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/Projects/"
+                
+                
+              >Projects</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/Tags/"
+                
+                
+              >Tags</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/large-concept-model.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Large Concept Models: Exploring Semantic Representations Beyond Tokens
+
+        
+      </h1>
+      
+        <p class="page__lead">Exploring higher-level semantic representations with Large Concept Models—moving beyond token-based LLMs.
+</p>
+      
+      
+
+
+      
+    </div>
+  
+  
+    <span class="page__hero-caption">Image credit: Arxiv Paper 2412.08821
+</span>
+  
+</div>
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Large Concept Models: Exploring Semantic Representations Beyond Tokens">
+    <meta itemprop="description" content="Exploring higher-level semantic representations with Large Concept Models—moving beyond token-based LLMs.">
+    <meta itemprop="datePublished" content="2025-01-05T00:00:00-08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h2 id="introduction">Introduction</h2>
+
+<p>This post highlights the work presented in the paper <strong>“Large Concept Models”</strong> (<a href="https://arxiv.org/pdf/2412.08821">Arxiv Link</a>), which proposes a novel approach to move beyond token-based language modeling by introducing higher-level semantic representations called <strong>concepts</strong>.</p>
+
+<hr />
+
+<h2 id="summary"><strong>Summary</strong></h2>
+
+<p>Large Language Models (LLMs) have become the foundation of modern AI systems, primarily processing input and output at the token level. However, human cognition operates at multiple levels of abstraction, enabling more complex reasoning and creative generation.</p>
+
+<p>This paper introduces <strong>Large Concept Models</strong>, which leverage <strong>concepts</strong>—semantic representations that are language- and modality-agnostic—to process and generate information. Key highlights include:</p>
+
+<ol>
+  <li><strong>Concepts as Higher-Level Representations</strong>
+    <ul>
+      <li>Concepts represent ideas or actions in flows, operating beyond individual tokens.</li>
+      <li>These are modeled using sentence embeddings based on <strong>SONAR</strong>, a multilingual embedding space supporting 200+ languages and speech/text modalities.</li>
+    </ul>
+  </li>
+  <li><strong>Training Methodology</strong>
+    <ul>
+      <li>Autoregressive sentence prediction is employed in embedding spaces rather than token-level predictions.</li>
+      <li>Multiple approaches, including <strong>MSE regression</strong> and <strong>diffusion-based generation</strong>, are evaluated.</li>
+    </ul>
+  </li>
+  <li><strong>Scaling Models and Performance</strong>
+    <ul>
+      <li>Models up to <strong>7B parameters</strong> trained with <strong>2.7T tokens</strong> exhibit impressive zero-shot generalization.</li>
+      <li>Evaluation tasks such as <strong>summarization</strong> and <strong>summary expansion</strong> demonstrate competitive performance over traditional LLMs.</li>
+    </ul>
+  </li>
+  <li><strong>Open Access</strong>
+    <ul>
+      <li>The training code is freely available, promoting further research and reproducibility.</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="key-takeaway"><strong>Key Takeaway</strong></h2>
+
+<p>The Large Concept Model opens up new possibilities for semantic reasoning and multilingual capabilities, presenting an exciting step toward language modeling beyond token-level processing.</p>
+
+<hr />
+
+<h2 id="related-video-model-distillation-and-arcee-distillkit"><strong>Related Video: Model Distillation and Arcee DistillKit</strong></h2>
+
+<p>This YouTube video provides insights into model distillation techniques, including <strong>logits distillation</strong> and <strong>hidden states distillation</strong>, which are relevant to training compact high-performance models.</p>
+
+<p><a href="https://www.youtube.com/watch?v=TwLiNTYvpPo"><img src="https://img.youtube.com/vi/TwLiNTYvpPo/0.jpg" alt="Watch on YouTube" /></a></p>
+
+<hr />
+
+<h2 id="tags"><strong>Tags</strong></h2>
+
+<p><strong>Tags</strong>:</p>
+<ul>
+  <li><a href="/tags/concept-models/">Concept Models</a></li>
+  <li><a href="/tags/llms/">LLMs</a></li>
+  <li><a href="/tags/embeddings/">Embeddings</a></li>
+  <li><a href="/tags/multilingual/">Multilingual</a></li>
+  <li><a href="/tags/zero-shot/">Zero-shot</a></li>
+  <li><a href="/tags/youtube/">YouTube</a></li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-01-05T00:00:00-08:00">January 5, 2025</time></p>
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="/ai/machine%20learning/2025/01/05/sample-post.html" class="pagination--pager" title="Model Distillation: Building High-Performance Small Language Models">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4029">Misagh Kordi</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4029/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4029/" rel="alternate" type="text/html" /><updated>2025-01-06T01:18:25-08:00</updated><id>http://localhost:4029/feed.xml</id><title type="html">Misagh Kordi</title><subtitle>Personal website showcasing projects, references, and resources on AI, LLMs, and bioinformatics.</subtitle><author><name>Misagh Kordi</name><email>misaghkordi1987@gmail.com</email></author><entry><title type="html">Large Concept Models: Exploring Semantic Representations Beyond Tokens</title><link href="http://localhost:4029/ai/language%20models/2025/01/05/large-concept-model.html" rel="alternate" type="text/html" title="Large Concept Models: Exploring Semantic Representations Beyond Tokens" /><published>2025-01-05T00:00:00-08:00</published><updated>2025-01-05T00:00:00-08:00</updated><id>http://localhost:4029/ai/language%20models/2025/01/05/large-concept-model</id><content type="html" xml:base="http://localhost:4029/ai/language%20models/2025/01/05/large-concept-model.html"><![CDATA[<h2 id="introduction">Introduction</h2>
+
+<p>This post highlights the work presented in the paper <strong>“Large Concept Models”</strong> (<a href="https://arxiv.org/pdf/2412.08821">Arxiv Link</a>), which proposes a novel approach to move beyond token-based language modeling by introducing higher-level semantic representations called <strong>concepts</strong>.</p>
+
+<hr />
+
+<h2 id="summary"><strong>Summary</strong></h2>
+
+<p>Large Language Models (LLMs) have become the foundation of modern AI systems, primarily processing input and output at the token level. However, human cognition operates at multiple levels of abstraction, enabling more complex reasoning and creative generation.</p>
+
+<p>This paper introduces <strong>Large Concept Models</strong>, which leverage <strong>concepts</strong>—semantic representations that are language- and modality-agnostic—to process and generate information. Key highlights include:</p>
+
+<ol>
+  <li><strong>Concepts as Higher-Level Representations</strong>
+    <ul>
+      <li>Concepts represent ideas or actions in flows, operating beyond individual tokens.</li>
+      <li>These are modeled using sentence embeddings based on <strong>SONAR</strong>, a multilingual embedding space supporting 200+ languages and speech/text modalities.</li>
+    </ul>
+  </li>
+  <li><strong>Training Methodology</strong>
+    <ul>
+      <li>Autoregressive sentence prediction is employed in embedding spaces rather than token-level predictions.</li>
+      <li>Multiple approaches, including <strong>MSE regression</strong> and <strong>diffusion-based generation</strong>, are evaluated.</li>
+    </ul>
+  </li>
+  <li><strong>Scaling Models and Performance</strong>
+    <ul>
+      <li>Models up to <strong>7B parameters</strong> trained with <strong>2.7T tokens</strong> exhibit impressive zero-shot generalization.</li>
+      <li>Evaluation tasks such as <strong>summarization</strong> and <strong>summary expansion</strong> demonstrate competitive performance over traditional LLMs.</li>
+    </ul>
+  </li>
+  <li><strong>Open Access</strong>
+    <ul>
+      <li>The training code is freely available, promoting further research and reproducibility.</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="key-takeaway"><strong>Key Takeaway</strong></h2>
+
+<p>The Large Concept Model opens up new possibilities for semantic reasoning and multilingual capabilities, presenting an exciting step toward language modeling beyond token-level processing.</p>
+
+<hr />
+
+<h2 id="related-video-model-distillation-and-arcee-distillkit"><strong>Related Video: Model Distillation and Arcee DistillKit</strong></h2>
+
+<p>This YouTube video provides insights into model distillation techniques, including <strong>logits distillation</strong> and <strong>hidden states distillation</strong>, which are relevant to training compact high-performance models.</p>
+
+<p><a href="https://www.youtube.com/watch?v=TwLiNTYvpPo"><img src="https://img.youtube.com/vi/TwLiNTYvpPo/0.jpg" alt="Watch on YouTube" /></a></p>
+
+<hr />
+
+<h2 id="tags"><strong>Tags</strong></h2>
+
+<p><strong>Tags</strong>:</p>
+<ul>
+  <li><a href="/tags/concept-models/">Concept Models</a></li>
+  <li><a href="/tags/llms/">LLMs</a></li>
+  <li><a href="/tags/embeddings/">Embeddings</a></li>
+  <li><a href="/tags/multilingual/">Multilingual</a></li>
+  <li><a href="/tags/zero-shot/">Zero-shot</a></li>
+  <li><a href="/tags/youtube/">YouTube</a></li>
+</ul>]]></content><author><name>Misagh Kordi</name></author><category term="AI" /><category term="Language Models" /><category term="Concept Models" /><category term="LLMs" /><category term="Embeddings" /><category term="Multilingual" /><category term="Zero-shot" /><category term="YouTube" /><summary type="html"><![CDATA[Exploring higher-level semantic representations with Large Concept Models—moving beyond token-based LLMs.]]></summary></entry><entry><title type="html">Model Distillation: Building High-Performance Small Language Models</title><link href="http://localhost:4029/ai/machine%20learning/2025/01/05/sample-post.html" rel="alternate" type="text/html" title="Model Distillation: Building High-Performance Small Language Models" /><published>2025-01-05T00:00:00-08:00</published><updated>2025-01-05T00:00:00-08:00</updated><id>http://localhost:4029/ai/machine%20learning/2025/01/05/sample-post</id><content type="html" xml:base="http://localhost:4029/ai/machine%20learning/2025/01/05/sample-post.html"><![CDATA[<h2 id="model-distillation-building-high-performance-small-language-models">Model Distillation: Building High-Performance Small Language Models</h2>
+
+<p>This is a <strong>YouTube video</strong> explaining <strong>model distillation</strong>, an advanced technique to build high-performance small language models at a reasonable cost.</p>
+
+<p>It introduces two popular techniques for distillation:</p>
+<ol>
+  <li><strong>Logits Distillation</strong></li>
+  <li><strong>Hidden States Distillation</strong></li>
+</ol>
+
+<p>The video explores how these methods work and how they’re implemented in the <strong>Arcee DistillKit</strong> open-source library. Finally, it reviews two Arcee models built with distillation: <strong>Arcee SuperNova 70B</strong> and <strong>Arcee SuperNova Medius 14B</strong>.</p>
+
+<hr />
+
+<h3 id="watch-the-video"><strong>Watch the Video:</strong></h3>
+
+<div style="text-align: center;">
+  <a href="https://www.youtube.com/watch?v=JE7SuP049mQ&amp;t=183s" target="_blank">
+    <img src="https://img.youtube.com/vi/JE7SuP049mQ/0.jpg" alt="Model Distillation Video" style="width: 60%; border-radius: 8px;" />
+  </a>
+  <br />
+  <a href="https://www.youtube.com/watch?v=JE7SuP049mQ&amp;t=183s" target="_blank" style="font-size: 16px; font-weight: bold;">▶ Click to Play Video</a>
+</div>
+
+<hr />
+
+<h3 id="tags"><strong>Tags:</strong></h3>
+
+<ul>
+  <li><a href="/tags/#distillation"><strong>Distillation</strong></a></li>
+  <li><a href="/tags/#arcee"><strong>Arcee</strong></a></li>
+  <li><a href="/tags/#deep-learning"><strong>Deep Learning</strong></a></li>
+  <li><a href="/tags/#nlp"><strong>NLP</strong></a></li>
+  <li><a href="/tags/#youtube"><strong>YouTube</strong></a></li>
+</ul>
+
+<hr />
+
+<h3 id="references"><strong>References:</strong></h3>
+<ul>
+  <li><strong>Arcee DistillKit Documentation</strong></li>
+  <li>Research papers on <strong>distillation techniques in NLP</strong></li>
+</ul>]]></content><author><name>Misagh Kordi</name></author><category term="AI" /><category term="Machine Learning" /><category term="Distillation" /><category term="Arcee" /><category term="Deep Learning" /><category term="NLP" /><category term="YouTube" /><summary type="html"><![CDATA[Exploring model distillation techniques to create high-performance small language models.]]></summary></entry></feed>
