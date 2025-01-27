@@ -1,4 +1,161 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4070/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4070/" rel="alternate" type="text/html" /><updated>2025-01-26T19:29:09-08:00</updated><id>http://localhost:4070/feed.xml</id><title type="html">Misagh Kordi</title><subtitle>Personal website showcasing projects, references, and resources on AI, LLMs, and bioinformatics.</subtitle><author><name>Misagh Kordi</name><email>misaghkordi1987@gmail.com</email></author><entry><title type="html">Various Lengths, Constant Speed: Efficient Language Modeling with Lightning Attention</title><link href="http://localhost:4070/posts/2025-01-26-Lightning_Attention/" rel="alternate" type="text/html" title="Various Lengths, Constant Speed: Efficient Language Modeling with Lightning Attention" /><published>2025-01-21T00:00:00-08:00</published><updated>2025-01-21T00:00:00-08:00</updated><id>http://localhost:4070/posts/Lightning_Attention</id><content type="html" xml:base="http://localhost:4070/posts/2025-01-26-Lightning_Attention/"><![CDATA[<h2 id="introduction"><strong>Introduction</strong></h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4070/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4070/" rel="alternate" type="text/html" /><updated>2025-01-26T22:46:59-08:00</updated><id>http://localhost:4070/feed.xml</id><title type="html">Misagh Kordi</title><subtitle>Personal website showcasing projects, references, and resources on AI, LLMs, and bioinformatics.</subtitle><author><name>Misagh Kordi</name><email>misaghkordi1987@gmail.com</email></author><entry><title type="html">Best of Both Worlds: Hybrid Graph Sequence Models</title><link href="http://localhost:4070/posts/2025-01-26-Graph-Sequence-Mode-theory/" rel="alternate" type="text/html" title="Best of Both Worlds: Hybrid Graph Sequence Models" /><published>2025-01-26T00:00:00-08:00</published><updated>2025-01-26T00:00:00-08:00</updated><id>http://localhost:4070/posts/Graph-Sequence-Mode-theory</id><content type="html" xml:base="http://localhost:4070/posts/2025-01-26-Graph-Sequence-Mode-theory/"><![CDATA[<h2 id="introduction"><strong>Introduction</strong></h2>
+
+<p>This post dives into <strong><a href="https://arxiv.org/abs/2411.15671">Best of Both Worlds: Advantages of Hybrid Graph Sequence Models</a></strong>, a paper that introduces GSM++ — a hybrid graph-sequence model. GSM++ combines the strengths of state space models (SSMs) and Transformers to address key challenges in graph learning, such as scalability, efficiency, and representational power.</p>
+
+<hr />
+
+<h2 id="key-innovations"><strong>Key Innovations</strong></h2>
+
+<h3 id="1-unified-framework"><strong>1. Unified Framework</strong></h3>
+<p>The paper introduces the Graph Sequence Model (GSM) framework, which consists of three stages:</p>
+<ul>
+  <li><strong>Tokenization</strong>: Converts graphs into sequences of nodes, edges, or subgraphs.</li>
+  <li><strong>Local Encoding</strong>: Captures local features using methods like MPNNs.</li>
+  <li><strong>Global Encoding</strong>: Models long-range dependencies with Transformers, SSMs, or hybrid architectures.</li>
+</ul>
+
+<h3 id="2-gsm-a-hybrid-model"><strong>2. GSM++: A Hybrid Model</strong></h3>
+<p>GSM++ enhances GSM with:</p>
+<ul>
+  <li><strong>Hierarchical Affinity Clustering (HAC)</strong>: Groups similar nodes to preserve graph structure.</li>
+  <li><strong>Hybrid Sequence Model</strong>: Combines SSMs (for inductive biases) with Transformers (for permutation invariance).</li>
+  <li><strong>Mixture of Tokenization (MoT)</strong>: Adapts tokenization methods to specific graph tasks.</li>
+</ul>
+
+<h3 id="3-theoretical-guarantees"><strong>3. Theoretical Guarantees</strong></h3>
+<p>The paper provides theoretical results on the advantages of hybrid models, such as improved sensitivity, parameter efficiency, and the ability to handle both local and global graph tasks effectively.</p>
+
+<hr />
+
+<h2 id="why-this-matters"><strong>Why This Matters</strong></h2>
+
+<ol>
+  <li><strong>Scalability</strong>: Handles large graphs with thousands of nodes efficiently.</li>
+  <li><strong>Efficiency</strong>: Combines the strengths of SSMs and Transformers to reduce computational costs.</li>
+  <li><strong>Accuracy</strong>: Outperforms baseline models in both local (e.g., motif counting) and global (e.g., connectivity) tasks.</li>
+  <li><strong>Flexibility</strong>: Adapts tokenization and sequence modeling to specific tasks, offering a versatile solution for graph learning.</li>
+</ol>
+
+<hr />
+
+<h2 id="key-results"><strong>Key Results</strong></h2>
+
+<ul>
+  <li><strong>Performance</strong>: Achieved state-of-the-art results on 8/10 benchmark datasets.</li>
+  <li><strong>Efficiency</strong>: Demonstrated lower memory usage compared to pure Transformers.</li>
+  <li><strong>Theoretical Insights</strong>: Proved that hybrid models can combine the advantages of SSMs (local sensitivity) and Transformers (global dependencies).</li>
+</ul>
+
+<h3 id="examples-of-tasks-solved"><strong>Examples of Tasks Solved</strong></h3>
+<ol>
+  <li><strong>Node Degree Prediction</strong>: GSM++ outperformed MPNNs by leveraging HAC-based tokenization.</li>
+  <li><strong>Graph Connectivity</strong>: Hybrid models achieved higher accuracy with fewer parameters compared to standalone Transformers.</li>
+  <li><strong>Motif Counting</strong>: Combined local encoders and Transformers for efficient and accurate motif detection.</li>
+</ol>
+
+<hr />
+
+<h2 id="takeaways"><strong>Takeaways</strong></h2>
+
+<ul>
+  <li><strong>New Standards</strong>: GSM++ sets a benchmark for hybrid graph-sequence models.</li>
+  <li><strong>Open Source</strong>: Code is available for reproducibility and further exploration.</li>
+  <li><strong>Paradigm Shift</strong>: Demonstrates that hybrid models can achieve efficiency and accuracy without sacrificing scalability.</li>
+</ul>
+
+<p><a href="https://arxiv.org/abs/2411.15671"><img src="https://img.shields.io/badge/arXiv-2411.15671-b31b1b.svg" alt="arXiv Paper" /></a></p>
+
+<hr />
+<!-- 
+## **Tags**
+- [Hybrid Models](/tags/hybrid/)
+- [Graph Sequence Models](/tags/graph-sequence/)
+- [Scalable Graph Learning](/tags/scalable/)
+- [SSMs and Transformers](/tags/ssm-transformers/) -->]]></content><author><name>Ali Behrouz, Ali Parviz, Mahdi Karami, Clayton Sanford, Bryan Perozzi, Vahab Mirrokni</name></author><category term="Graph Neural Networks" /><category term="Hybrid Models" /><category term="GNN" /><category term="Transformers" /><category term="SSM" /><category term="hybrid-models" /><category term="graph-learning" /><summary type="html"><![CDATA[Combining state space models and Transformers for efficient graph sequence learning.]]></summary></entry><entry><title type="html">Foundations of Large Language Models: A Comprehensive Guide</title><link href="http://localhost:4070/posts/2025-01-26-fundation_of_LLM/" rel="alternate" type="text/html" title="Foundations of Large Language Models: A Comprehensive Guide" /><published>2025-01-26T00:00:00-08:00</published><updated>2025-01-26T00:00:00-08:00</updated><id>http://localhost:4070/posts/fundation_of_LLM</id><content type="html" xml:base="http://localhost:4070/posts/2025-01-26-fundation_of_LLM/"><![CDATA[<h2 id="introduction"><strong>Introduction</strong></h2>
+
+<p>Large language models (LLMs) have revolutionized natural language processing and AI, enabling unprecedented capabilities in understanding and generating text. <strong><a href="https://arxiv.org/abs/2501.09223">Foundations of Large Language Models</a></strong> by Tong Xiao and Jingbo Zhu offers a deep dive into the core concepts and methods that underpin these transformative technologies.</p>
+
+<hr />
+
+<h2 id="what-the-book-covers"><strong>What the Book Covers</strong></h2>
+
+<p>The book is structured into <strong>four chapters</strong>, each focusing on a key aspect of large language models:</p>
+
+<h3 id="1-pre-training"><strong>1. Pre-training</strong></h3>
+<ul>
+  <li>Explores the foundational step of pre-training, which involves training models on vast amounts of unlabeled data using self-supervised learning.</li>
+  <li>Discusses different architectures, such as:
+    <ul>
+      <li><strong>Decoder-only models</strong> (e.g., GPT)</li>
+      <li><strong>Encoder-only models</strong> (e.g., BERT)</li>
+      <li><strong>Encoder-decoder models</strong> (e.g., T5)</li>
+    </ul>
+  </li>
+  <li>Introduces methods like masked language modeling, causal language modeling, and denoising autoencoding.</li>
+  <li>Uses BERT as an example to illustrate the process of self-supervised pre-training and adaptation to downstream tasks.</li>
+</ul>
+
+<h3 id="2-generative-models"><strong>2. Generative Models</strong></h3>
+<ul>
+  <li>Focuses on the generative capabilities of LLMs, which enable them to predict and generate coherent text.</li>
+  <li>Covers topics like:
+    <ul>
+      <li><strong>Training and fine-tuning generative models</strong></li>
+      <li><strong>Scaling techniques</strong> for handling massive datasets and long sequences</li>
+      <li>Optimizations in hardware and distributed training</li>
+    </ul>
+  </li>
+  <li>Examines how generative models handle long-range dependencies and large-scale text processing.</li>
+</ul>
+
+<h3 id="3-prompting"><strong>3. Prompting</strong></h3>
+<ul>
+  <li>Highlights the role of prompting in adapting LLMs for diverse tasks without additional training.</li>
+  <li>Discusses:
+    <ul>
+      <li>General prompting strategies</li>
+      <li>Advanced techniques like <strong>chain-of-thought reasoning</strong>, <strong>self-refinement</strong>, and <strong>ensembling</strong></li>
+      <li>Few-shot and zero-shot learning using in-context examples</li>
+    </ul>
+  </li>
+  <li>Explains how prompting bridges the gap between pre-trained LLMs and specific applications.</li>
+</ul>
+
+<h3 id="4-alignment"><strong>4. Alignment</strong></h3>
+<ul>
+  <li>Explores methods to align LLMs with human values and instructions, ensuring they behave as intended.</li>
+  <li>Topics include:
+    <ul>
+      <li><strong>Instruction fine-tuning</strong> to teach models task-specific behavior</li>
+      <li><strong>Reinforcement Learning from Human Feedback (RLHF)</strong> to optimize model outputs</li>
+      <li>Techniques like <strong>direct preference optimization</strong> and <strong>automatic data generation</strong></li>
+    </ul>
+  </li>
+  <li>Emphasizes the importance of ethical considerations and robust evaluation for aligned AI systems.</li>
+</ul>
+
+<hr />
+
+<h2 id="why-this-book-matters"><strong>Why This Book Matters</strong></h2>
+
+<ul>
+  <li><strong>Comprehensive Yet Accessible</strong>: The book balances technical depth with readability, making it suitable for both beginners and experts in NLP.</li>
+  <li><strong>Self-Contained Chapters</strong>: Each chapter is designed as a standalone “note,” allowing readers to focus on specific topics or gain a holistic understanding.</li>
+  <li><strong>Practical Insights</strong>: Covers real-world techniques for training, prompting, and aligning LLMs, alongside theoretical foundations.</li>
+</ul>
+
+<p>Whether you’re a researcher, practitioner, or enthusiast, this book is an essential resource for understanding the foundations of large language models.</p>
+
+<p><a href="https://arxiv.org/abs/2501.09223"><img src="https://img.shields.io/badge/arXiv-2501.09223-b31b1b.svg" alt="arXiv Paper" /></a></p>
+
+<hr />
+<!-- 
+## **Tags**
+- [Large Language Models](/tags/llms/)
+- [Pre-training](/tags/pre-training/)
+- [Prompting](/tags/prompting/)
+- [Alignment](/tags/alignment/)
+- [Generative AI](/tags/generative-ai/) -->]]></content><author><name>Tong Xiao and Jingbo Zhu</name></author><category term="Large Language Models" /><category term="NLP" /><category term="LLM" /><category term="pre-training" /><category term="prompting" /><category term="alignment" /><category term="generative AI" /><summary type="html"><![CDATA[An in-depth exploration of the foundational principles behind large language models, including pre-training, prompting, generative techniques, and alignment methods.]]></summary></entry><entry><title type="html">Various Lengths, Constant Speed: Efficient Language Modeling with Lightning Attention</title><link href="http://localhost:4070/posts/2025-01-26-Lightning_Attention/" rel="alternate" type="text/html" title="Various Lengths, Constant Speed: Efficient Language Modeling with Lightning Attention" /><published>2025-01-21T00:00:00-08:00</published><updated>2025-01-21T00:00:00-08:00</updated><id>http://localhost:4070/posts/Lightning_Attention</id><content type="html" xml:base="http://localhost:4070/posts/2025-01-26-Lightning_Attention/"><![CDATA[<h2 id="introduction"><strong>Introduction</strong></h2>
 <p>This post examines <strong><a href="https://arxiv.org/abs/TBD">Lightning Attention</a></strong> from Qin et al.’s groundbreaking work, which achieves <strong>constant-speed training</strong> across variable sequence lengths. The accompanying video explanation demonstrates these innovations in action:</p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9a7Ddy8mL58" frameborder="0" allowfullscreen=""></iframe>
@@ -61,7 +218,7 @@
 - [Efficient Transformers](/tags/efficient-ai/)
 - [GPU Optimization](/tags/gpu-optimization/)
 - [Long-Context LLMs](/tags/long-sequences/)
-- [Green AI](/tags/green-ai/) -->]]></content><author><name>Zhen Qin, Dong Li, Weigao Sun, and colleagues*</name></author><category term="Transformers" /><category term="Efficient AI" /><category term="linear-attention" /><category term="ssm" /><category term="efficient-training" /><category term="long-sequences" /><category term="gpu-optimization" /><summary type="html"><![CDATA[Revolutionizing attention mechanisms for efficient long-sequence modeling.]]></summary></entry><entry><title type="html">Various Lengths, Constant Speed: Efficient Language Modeling with Lightning Attention</title><link href="http://localhost:4070/posts/2025-01-26-NewLightning_Attention_2/" rel="alternate" type="text/html" title="Various Lengths, Constant Speed: Efficient Language Modeling with Lightning Attention" /><published>2025-01-21T00:00:00-08:00</published><updated>2025-01-21T00:00:00-08:00</updated><id>http://localhost:4070/posts/NewLightning_Attention_2</id><content type="html" xml:base="http://localhost:4070/posts/2025-01-26-NewLightning_Attention_2/"><![CDATA[<h2 id="introduction"><strong>Introduction</strong></h2>
+- [Green AI](/tags/green-ai/) -->]]></content><author><name>Zhen Qin, Dong Li, Weigao Sun, and colleagues*</name></author><category term="Transformers" /><category term="Efficient AI" /><category term="linear-attention" /><category term="SSM" /><category term="efficient-training" /><category term="long-sequences" /><category term="gpu-optimization" /><summary type="html"><![CDATA[Revolutionizing attention mechanisms for efficient long-sequence modeling.]]></summary></entry><entry><title type="html">Various Lengths, Constant Speed: Efficient Language Modeling with Lightning Attention</title><link href="http://localhost:4070/posts/2025-01-26-NewLightning_Attention_2/" rel="alternate" type="text/html" title="Various Lengths, Constant Speed: Efficient Language Modeling with Lightning Attention" /><published>2025-01-21T00:00:00-08:00</published><updated>2025-01-21T00:00:00-08:00</updated><id>http://localhost:4070/posts/NewLightning_Attention_2</id><content type="html" xml:base="http://localhost:4070/posts/2025-01-26-NewLightning_Attention_2/"><![CDATA[<h2 id="introduction"><strong>Introduction</strong></h2>
 <p>Let’s unpack what makes <strong><a href="https://arxiv.org/abs/TBD">Lightning Attention</a></strong> revolutionary! Qin et al.’s work achieves <strong>constant-speed training</strong> even with wildly varying sequence lengths. Check out our video breakdown to see these innovations in action:</p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9a7Ddy8mL58" frameborder="0" allowfullscreen=""></iframe>
@@ -185,73 +342,7 @@
 - [State Space Models](/tags/ssms/)
 - [Efficient ML](/tags/efficiency/)
 - [Long-Range Dependencies](/tags/long-range/)
-- [Graph Learning](/tags/graph-learning/) -->]]></content><author><name>Your Name</name></author><category term="Graph Neural Networks" /><category term="State Space Models" /><category term="GNN" /><category term="ssm" /><category term="mamba" /><category term="long-range-dependencies" /><category term="graph-attention" /><summary type="html"><![CDATA[Bridging graph learning and state space models for efficient long-range dependency capture.]]></summary></entry><entry><title type="html">Titans: Learning to Memorize at Test Time</title><link href="http://localhost:4070/posts/2025-01-19-Titans_Learning_to_Memorize_at_Test_Time/" rel="alternate" type="text/html" title="Titans: Learning to Memorize at Test Time" /><published>2025-01-19T00:00:00-08:00</published><updated>2025-01-19T00:00:00-08:00</updated><id>http://localhost:4070/posts/Titans_Learning_to_Memorize_at_Test_Time</id><content type="html" xml:base="http://localhost:4070/posts/2025-01-19-Titans_Learning_to_Memorize_at_Test_Time/"><![CDATA[<h2 id="introduction"><strong>Introduction</strong></h2>
-<p>Let’s explore <strong><a href="https://arxiv.org/pdf/2501.00663v1">Titans</a></strong> - a breakthrough architecture that brings human-like memory capabilities to neural networks during inference. Watch our video deep dive to see these mechanisms in action:</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lWgFuHy_m-c?si=OfZtXE7uLIEp8AFf" frameborder="0" allowfullscreen=""></iframe>
-
-<hr />
-
-<h2 id="key-innovations"><strong>Key Innovations</strong></h2>
-
-<h3 id="1-cognitive-memory-systems"><strong>1. Cognitive Memory Systems</strong></h3>
-<p>Mimics human memory through:</p>
-<ul>
-  <li><strong>Test-Time Memorization</strong>: Learns during inference without retraining</li>
-  <li><strong>Dynamic Pattern Storage</strong>: Adaptive memory allocation like hippocampal function</li>
-</ul>
-
-<h3 id="2-parallel-processing-architecture"><strong>2. Parallel Processing Architecture</strong></h3>
-<ul>
-  <li><strong>Task-Specific Memory Banks</strong>: Isolated modules for simultaneous processing</li>
-  <li><strong>Attention-Based Recall</strong>: Context-aware memory retrieval mechanisms</li>
-</ul>
-
-<h3 id="3-bio-inspired-learning"><strong>3. Bio-Inspired Learning</strong></h3>
-<ol>
-  <li><strong>Synaptic Plasticity Rules</strong>: Strengthens important neural connections</li>
-  <li><strong>Forgetting Mechanisms</strong>: Prunes irrelevant information like neural pruning</li>
-  <li><strong>Energy-Efficient Recall</strong>: Mimics brain’s predictive coding strategies</li>
-</ol>
-
-<hr />
-
-<h2 id="why-this-matters"><strong>Why This Matters</strong></h2>
-
-<ol>
-  <li><strong>Continuous Learning</strong>: 38% improvement on streaming tasks vs static models</li>
-  <li><strong>Hardware Efficiency</strong>: Processes 5× more parallel tasks with same compute</li>
-  <li><strong>Human-Like Adaptation</strong>: Achieves 89% human-level performance on dynamic QA tasks</li>
-  <li><strong>Memory Precision</strong>: 92% retrieval accuracy after 10,000 memory operations</li>
-</ol>
-
-<hr />
-
-<h2 id="key-takeaways"><strong>Key Takeaways</strong></h2>
-
-<ul>
-  <li><strong>Test-Time Learning</strong>: First architecture enabling true inference-time adaptation</li>
-  <li><strong>Scalable Memory</strong>: Demonstrated on 100+ concurrent task streams</li>
-  <li><strong>Open Research</strong>: Full implementation details provided in paper</li>
-</ul>
-
-<p><a href="https://youtu.be/lWgFuHy_m-c?si=OfZtXE7uLIEp8AFf"><img src="https://img.shields.io/badge/YouTube-See_Titans_in_Action-red" alt="Video Walkthrough" /></a><br />
-<a href="https://arxiv.org/pdf/2501.00663v1"><img src="https://img.shields.io/badge/arXiv-Read_Full_Paper-b31b1b" alt="Research Paper" /></a></p>
-
-<hr />
-
-<h3 id="deep-dive"><strong>Deep Dive</strong></h3>
-<p>For extended analysis, see our companion article:<br />
-<a href="https://medium.com/@simranjeetsingh1497/google-transformers-2-0-titans-learning-to-memorize-at-test-time-b72b92fbd731">Google Transformers 2.0: Titans - Learning to Memorize at Test Time</a></p>
-
-<!--   
-### **Tags**  
-- [YouTube](/tags/youtube/)  
-- [Memory](/tags/memory/)  
-- [Neural Networks](/tags/neural-networks/)  
-- [Human Cognition](/tags/human-cognition/)  
-- [Parallelization](/tags/parallelization/)  
-- [Titans](/tags/titans/) -->]]></content><author><name>Ali Behrouz, Peilin Zhong, and Vahab Mirrokni</name></author><category term="LLMs" /><category term="Research" /><category term="memory" /><category term="neural-networks" /><category term="titans" /><category term="parallelization" /><category term="youtube" /><category term="human-cognition" /><summary type="html"><![CDATA[Revolutionizing neural networks with human-like memory mechanisms at test time.]]></summary></entry><entry><title type="html">Large Concept Models: Exploring Semantic Representations Beyond Tokens</title><link href="http://localhost:4070/posts/2025-01-05-large-concept-model/" rel="alternate" type="text/html" title="Large Concept Models: Exploring Semantic Representations Beyond Tokens" /><published>2024-07-20T00:00:00-07:00</published><updated>2024-07-20T00:00:00-07:00</updated><id>http://localhost:4070/posts/large-concept-model</id><content type="html" xml:base="http://localhost:4070/posts/2025-01-05-large-concept-model/"><![CDATA[<h2 id="introduction">Introduction</h2>
+- [Graph Learning](/tags/graph-learning/) -->]]></content><author><name>Ali Behrouz and Farnoosh Hashemi</name></author><category term="Graph Neural Networks" /><category term="State Space Models" /><category term="GNN" /><category term="ssm" /><category term="mamba" /><category term="long-range-dependencies" /><category term="graph-attention" /><summary type="html"><![CDATA[Bridging graph learning and state space models for efficient long-range dependency capture.]]></summary></entry><entry><title type="html">Large Concept Models: Exploring Semantic Representations Beyond Tokens</title><link href="http://localhost:4070/posts/2025-01-05-large-concept-model/" rel="alternate" type="text/html" title="Large Concept Models: Exploring Semantic Representations Beyond Tokens" /><published>2024-07-20T00:00:00-07:00</published><updated>2024-07-20T00:00:00-07:00</updated><id>http://localhost:4070/posts/large-concept-model</id><content type="html" xml:base="http://localhost:4070/posts/2025-01-05-large-concept-model/"><![CDATA[<h2 id="introduction">Introduction</h2>
 
 <p>This post highlights the work presented in the paper <strong>“Large Concept Models”</strong> (<a href="https://arxiv.org/pdf/2412.08821">Arxiv Link</a>), which proposes a novel approach to move beyond token-based language modeling by introducing higher-level semantic representations called <strong>concepts</strong>.</p>
 

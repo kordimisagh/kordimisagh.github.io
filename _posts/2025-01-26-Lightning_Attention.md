@@ -3,7 +3,7 @@ layout: single
 title: "Various Lengths, Constant Speed: Efficient Language Modeling with Lightning Attention"
 date: 2025-01-21
 categories: [Transformers, Efficient AI]
-tags: [linear-attention, ssm, efficient-training, long-sequences, gpu-optimization]
+tags: [linear-attention, SSM, efficient-training, long-sequences, gpu-optimization]
 author: "Zhen Qin, Dong Li, Weigao Sun, and colleagues*"
 header:
   overlay_image: /assets/images/Lightning1.png

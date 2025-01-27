@@ -11,12 +11,6 @@ var store = [{
         "url": "/posts/2025-01-05-sample-post/",
         "teaser": null
       },{
-        "title": "Titans: Learning to Memorize at Test Time",
-        "excerpt":"Introduction Let’s explore Titans - a breakthrough architecture that brings human-like memory capabilities to neural networks during inference. Watch our video deep dive to see these mechanisms in action: Key Innovations 1. Cognitive Memory Systems Mimics human memory through: Test-Time Memorization: Learns during inference without retraining Dynamic Pattern Storage: Adaptive...","categories": ["LLMs","Research"],
-        "tags": ["memory","neural-networks","titans","parallelization","youtube","human-cognition"],
-        "url": "/posts/2025-01-19-Titans_Learning_to_Memorize_at_Test_Time/",
-        "teaser": null
-      },{
         "title": "Graph Mamba: State Space Models for Efficient Graph Learning",
         "excerpt":"Introduction This post explores the novel framework presented in Graph Mamba: Towards Learning on Graphs with State Space Models, which introduces Graph Mamba Networks (GMNs) - a new paradigm combining state space models (SSMs) with graph-structured data processing. Key Innovations 1. Beyond Traditional Approaches GMNs address two critical limitations of...","categories": ["Graph Neural Networks","State Space Models"],
         "tags": ["GNN","ssm","mamba","long-range-dependencies","graph-attention"],
@@ -25,7 +19,7 @@ var store = [{
       },{
         "title": "Various Lengths, Constant Speed: Efficient Language Modeling with Lightning Attention",
         "excerpt":"Introduction This post examines Lightning Attention from Qin et al.’s groundbreaking work, which achieves constant-speed training across variable sequence lengths. The accompanying video explanation demonstrates these innovations in action: Key Innovations 1. Hybrid Attention Architecture Solves two fundamental bottlenecks: Cumsum Bottleneck: Eliminates slow cumulative summation in causal masking Memory Fragmentation:...","categories": ["Transformers","Efficient AI"],
-        "tags": ["linear-attention","ssm","efficient-training","long-sequences","gpu-optimization"],
+        "tags": ["linear-attention","SSM","efficient-training","long-sequences","gpu-optimization"],
         "url": "/posts/2025-01-26-Lightning_Attention/",
         "teaser": null
       },{
@@ -33,5 +27,17 @@ var store = [{
         "excerpt":"Introduction Let’s unpack what makes Lightning Attention revolutionary! Qin et al.’s work achieves constant-speed training even with wildly varying sequence lengths. Check out our video breakdown to see these innovations in action: Key Innovations 1. Hybrid Attention Architecture Tackles two stubborn challenges: Cumsum Bottleneck: Banishes slow cumulative summation in causal...","categories": ["Transformers","Efficient AI"],
         "tags": ["linear-attention","ssm","efficient-training","long-sequences","gpu-optimization"],
         "url": "/posts/2025-01-26-NewLightning_Attention_2/",
+        "teaser": null
+      },{
+        "title": "Best of Both Worlds: Hybrid Graph Sequence Models",
+        "excerpt":"Introduction This post dives into Best of Both Worlds: Advantages of Hybrid Graph Sequence Models, a paper that introduces GSM++ — a hybrid graph-sequence model. GSM++ combines the strengths of state space models (SSMs) and Transformers to address key challenges in graph learning, such as scalability, efficiency, and representational power....","categories": ["Graph Neural Networks","Hybrid Models"],
+        "tags": ["GNN","Transformers","SSM","hybrid-models","graph-learning"],
+        "url": "/posts/2025-01-26-Graph-Sequence-Mode-theory/",
+        "teaser": null
+      },{
+        "title": "Foundations of Large Language Models: A Comprehensive Guide",
+        "excerpt":"Introduction Large language models (LLMs) have revolutionized natural language processing and AI, enabling unprecedented capabilities in understanding and generating text. Foundations of Large Language Models by Tong Xiao and Jingbo Zhu offers a deep dive into the core concepts and methods that underpin these transformative technologies. What the Book Covers...","categories": ["Large Language Models","NLP"],
+        "tags": ["LLM","pre-training","prompting","alignment","generative AI"],
+        "url": "/posts/2025-01-26-fundation_of_LLM/",
         "teaser": null
       }]

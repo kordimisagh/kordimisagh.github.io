@@ -6,7 +6,7 @@ categories: [AI, Machine Learning]
 tags: [distillation, arcee, deep-learning, nlp, youtube]
 author: "Misagh Kordi"
 header:
-  overlay_image: /assets/images/distillation-header.jpg  <!-- Unique image -->
+  overlay_image: /assets/images/distillation-header.png
   overlay_filter: 0.5
   caption: "Photo credit: Unsplash"
   actions:

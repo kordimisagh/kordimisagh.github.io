@@ -1,9 +1,38 @@
+// _sass/custom/_custom.scss
+// Add all your custom styles here
+
+// Archive items layout
+.archive__item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  
+  &-thumbnail {
+    flex: 0 0 80px;
+    margin-top: 0.5em;
+    
+    img {
+      width: 80px;
+      height: 45px;
+      object-fit: cover;
+      border-radius: 3px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+  }
+  
+  &-content {
+    flex: 1;
+  }
+}
+
+// Base styles from your style.scss
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
   line-height: 1.6;
 }
+
 nav a {
   margin-right: 10px;
   text-decoration: none;

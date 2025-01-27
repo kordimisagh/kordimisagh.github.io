@@ -1,4 +1,24 @@
 @charset "UTF-8";
+.archive__item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.archive__item-thumbnail {
+  flex: 0 0 80px;
+  margin-top: 0.5em;
+}
+.archive__item-thumbnail img {
+  width: 80px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.archive__item-content {
+  flex: 1;
+}
+
 /* ==========================================================================
    Default skin
    ========================================================================== */
