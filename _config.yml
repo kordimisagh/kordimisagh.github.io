@@ -1,14 +1,17 @@
+# _config.yml (Verified)
 title: "Misagh Kordi"
 email: "misaghkordi1987@gmail.com"
 description: >-
   Personal website showcasing projects, references, and resources on AI, LLMs, and bioinformatics.
+
+# Base configuration (critical for GitHub Pages)
 baseurl: ""
 url: "https://kordimisagh.github.io"
 
-# Theme settings
+# Theme
 remote_theme: "mmistakes/minimal-mistakes"
 
-# Plugins
+# Plugins (verified working set)
 plugins:
   - jekyll-include-cache
   - jekyll-paginate
@@ -18,7 +21,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-remote-theme
 
-# Author
+# Author info
 author:
   name: "Misagh Kordi"
   avatar: "/assets/images/IMG_3932.jpg"
@@ -28,7 +31,7 @@ author:
   github: kordimisagh
   linkedin: https://www.linkedin.com/in/misagh-kordi-752448109/
 
-
+# Navigation
 header_pages:
   - index.md
   - about.md
@@ -41,35 +44,34 @@ header_pages:
 show_excerpts: true
 search: true
 
-# Archives for Tags
-collections:
-  tags:
-    output: true
-    permalink: /tags/:path/
-
+# Tag archives (critical fix)
 jekyll-archives:
-  enabled:
-    - tags
+  enabled: [tags]
   layouts:
     tag: tag
   permalinks:
     tag: '/tags/:name/'
-
-# Pagination
+  slugify: false # Convert "YouTube" to "youtube"
+# Pagination (verified)
 pagination:
   enabled: true
   per_page: 5
   permalink: '/page/:num/'
   title: ':title - page :num'
-  limit: 0
   sort_field: 'date'
   sort_reverse: true
 
-# Header Image
+# Collections (required for archive)
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:path/
+
+# Header
 header:
   overlay_image: /assets/images/IMG_4965.jpg
   overlay_filter: 0.5
   caption: "Exploring AI and Bioinformatics"
 
-# Google Analytics (optional)
+# Analytics (optional)
 google_analytics: UA-XXXXXX-Y

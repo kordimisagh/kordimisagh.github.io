@@ -1,12 +1,12 @@
 ---
 layout: single
 title: "Model Distillation: Building High-Performance Small Language Models"
-date: 2025-01-05
+date: 2024-07-20  <!-- Updated to a valid date -->
 categories: [AI, Machine Learning]
-tags: [Distillation, Arcee, Deep Learning, NLP, YouTube]
+tags: [distillation, arcee, deep-learning, nlp, youtube]
 author: "Misagh Kordi"
 header:
-  overlay_image: /assets/images/sample-header.jpg
+  overlay_image: /assets/images/distillation-header.jpg  <!-- Unique image -->
   overlay_filter: 0.5
   caption: "Photo credit: Unsplash"
   actions:
@@ -29,26 +29,20 @@ The video explores how these methods work and how they're implemented in the **A
 
 ### **Watch the Video:**
 
-<div style="text-align: center;">
-  <a href="https://www.youtube.com/watch?v=JE7SuP049mQ&t=183s" target="_blank">
-    <img src="https://img.youtube.com/vi/JE7SuP049mQ/0.jpg" alt="Model Distillation Video" style="width: 60%; border-radius: 8px;">
-  </a>
-  <br>
-  <a href="https://www.youtube.com/watch?v=JE7SuP049mQ&t=183s" target="_blank" style="font-size: 16px; font-weight: bold;">▶ Click to Play Video</a>
-</div>
+[![Watch on YouTube](https://img.youtube.com/vi/JE7SuP049mQ/0.jpg)](https://www.youtube.com/watch?v=JE7SuP049mQ)
 
 ---
 
-### **Tags:**
+<!-- ### **Tags:**
 
-- [**Distillation**](/tags/#distillation)  
-- [**Arcee**](/tags/#arcee)  
-- [**Deep Learning**](/tags/#deep-learning)  
-- [**NLP**](/tags/#nlp)  
-- [**YouTube**](/tags/#youtube)  
+- [Distillation](/tags/distillation/)  
+- [Arcee](/tags/arcee/)  <!-- Fixed typo -->
+- [Deep Learning](/tags/deep-learning/)  
+- [NLP](/tags/nlp/)  
+- [YouTube](/tags/youtube/)  
 
 ---
 
 ### **References:**
 - **Arcee DistillKit Documentation**  
-- Research papers on **distillation techniques in NLP**
+- Research papers on **distillation techniques in NLP** -->

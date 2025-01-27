@@ -2,15 +2,41 @@
 layout: default
 ---
 
-<h1 class="page-title">Tag: {{ page.tag }}</h1>
+{% comment %} Normalize tag name to lowercase for matching {% endcomment %}
+{% assign raw_tag = page.url | split: '/' | last | url_decode %}
+{% assign tag_name = raw_tag | downcase %}
+
+<h1 class="page-title">Tag: {{ raw_tag }}</h1>
 
 <div class="entries">
-  {% for post in site.posts %}
-    {% if post.tags contains page.tag %}
-      <article class="post">
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt }}</p>
-      </article>
+  {% comment %} Find matching tag regardless of case {% endcomment %}
+  {% assign tag_posts = nil %}
+  {% for tag in site.tags %}
+    {% assign current_tag = tag[0] | downcase %}
+    {% if current_tag == tag_name %}
+      {% assign tag_posts = tag[1] %}
+      {% assign display_tag = tag[0] %} {% comment %} Preserve original case {% endcomment %}
     {% endif %}
   {% endfor %}
+
+  {% if tag_posts %}
+    <p>Showing posts tagged <strong>{{ display_tag }}</strong></p>
+    {% for post in tag_posts %}
+      <article class="entry">
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <div class="entry-excerpt">
+          {{ post.excerpt | markdownify | strip_html | truncate: 200 }}
+        </div>
+      </article>
+    {% endfor %}
+  {% else %}
+    <p>No posts found with tag <strong>{{ raw_tag }}</strong>.</p>
+    <div class="debug-info">
+      <p>Available tags (case-insensitive): 
+        {% for tag in site.tags %}
+          "{{ tag[0] }}"{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </p>
+    </div>
+  {% endif %}
 </div>

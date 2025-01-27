@@ -1,14 +1,14 @@
 ---
 layout: single
 title: "Large Concept Models: Exploring Semantic Representations Beyond Tokens"
-date: 2025-01-05
+date: 2024-07-20  # Updated date
 categories: [AI, Language Models]
-tags: [Concept Models, LLMs, Embeddings, Multilingual, Zero-shot, YouTube]
+tags: [concept-models, llms, embeddings, multilingual, zero-shot, youtube]
 author: "Misagh Kordi"
 header:
   overlay_image: /assets/images/large-concept-model.jpg
   overlay_filter: 0.5
-  caption: "Image credit: Arxiv Paper 2412.08821"
+  caption: "Image source: arXiv:2412.08821"  # Corrected credit
 excerpt: "Exploring higher-level semantic representations with Large Concept Models—moving beyond token-based LLMs."
 ---
 
@@ -26,11 +26,11 @@ This paper introduces **Large Concept Models**, which leverage **concepts**—se
 
 1. **Concepts as Higher-Level Representations**  
    - Concepts represent ideas or actions in flows, operating beyond individual tokens.  
-   - These are modeled using sentence embeddings based on **SONAR**, a multilingual embedding space supporting 200+ languages and speech/text modalities.
+   - These are modeled using sentence embeddings based on **SONAR** (Sentence-level Omni-lingual and Omni-modal Representations), a multilingual embedding framework supporting 200+ languages and speech/text modalities.
 
 2. **Training Methodology**  
    - Autoregressive sentence prediction is employed in embedding spaces rather than token-level predictions.  
-   - Multiple approaches, including **MSE regression** and **diffusion-based generation**, are evaluated.  
+   - Multiple approaches, including **MSE regression** (mean squared error regression) and **diffusion-based generation**, are evaluated.  
 
 3. **Scaling Models and Performance**  
    - Models up to **7B parameters** trained with **2.7T tokens** exhibit impressive zero-shot generalization.  
@@ -49,19 +49,14 @@ The Large Concept Model opens up new possibilities for semantic reasoning and mu
 
 ## **Related Video: Model Distillation and Arcee DistillKit**
 
-This YouTube video provides insights into model distillation techniques, including **logits distillation** and **hidden states distillation**, which are relevant to training compact high-performance models.
+This YouTube video provides insights into model distillation techniques, including **logits distillation** and **hidden states distillation**, which are relevant to training compact high-performance models. These methods complement concept models by enabling efficient deployment of large models into smaller, task-specific versions.
 
 [![Watch on YouTube](https://img.youtube.com/vi/TwLiNTYvpPo/0.jpg)](https://www.youtube.com/watch?v=TwLiNTYvpPo)
 
-
 ---
 
-## **Tags**
-
-**Tags**:  
-- [Concept Models](/tags/concept-models/)  
+<!-- ### **Tags**  
 - [LLMs](/tags/llms/)  
 - [Embeddings](/tags/embeddings/)  
 - [Multilingual](/tags/multilingual/)  
-- [Zero-shot](/tags/zero-shot/)  
-- [YouTube](/tags/youtube/)  
+- [YouTube](/tags/youtube/)  URL lowercase, display name capitalized -->

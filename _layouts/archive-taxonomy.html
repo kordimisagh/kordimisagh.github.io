@@ -27,10 +27,13 @@ author_profile: false
       {% endif %}
     </h1>
 
+    {% assign slugified_page_title = page.title | slugify %}
     {% for post in site.posts %}
-      {% if post.tags contains page.title %}
-        {% include archive-single.html %}
-      {% endif %}
+      {% for tag in post.tags %}
+        {% if tag | slugify == slugified_page_title %}
+          {% include archive-single.html %}
+        {% endif %}
+      {% endfor %}
     {% endfor %}
   </div>
 </div>

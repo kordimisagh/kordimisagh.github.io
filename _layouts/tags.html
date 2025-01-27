@@ -4,13 +4,57 @@ title: "Tags"
 permalink: /tags/
 ---
 
-<h1 class="page-title">{{ page.title }}</h1>
+<style>
+  body {
+    background-image: url('{{ site.baseurl }}/assets/images/tagsbackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
 
-<ul class="taxonomy-index">
-  {% assign sorted_tags = site.tags | sort %}
-  {% for tag in sorted_tags %}
-    <li>
-      <a href="{{ site.baseurl }}/tags/{{ tag[0] | slugify }}/">{{ tag[0] }}</a> ({{ tag[1].size }})
-    </li>
-  {% endfor %}
-</ul>
+  .tags-page {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 50px;
+    margin: 20px auto;
+    max-width: 80%;
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for a neat look */
+  }
+
+  .taxonomy-index {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  .taxonomy-index li {
+    display: inline-block;
+    margin: 10px 15px;
+    font-size: 1.2em;
+  }
+
+  .taxonomy-index a {
+    color: #333; /* Dark color for contrast */
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .taxonomy-index a:hover {
+    text-decoration: underline;
+    color: #007bff; /* Optional: Add hover effect color */
+  }
+</style>
+
+<div class="tags-page">
+  <h1 class="page-title">{{ page.title }}</h1>
+
+  <ul class="taxonomy-index">
+    {% assign sorted_tags = site.tags | sort %}
+    {% for tag in sorted_tags %}
+      <li>
+        <a href="{{ site.baseurl }}/tags/{{ tag[0] | slugify }}/">{{ tag[0] }}</a> ({{ tag[1].size }})
+      </li>
+    {% endfor %}
+  </ul>
+</div>

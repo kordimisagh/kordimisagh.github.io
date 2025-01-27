@@ -22,7 +22,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Misagh Kordi">
 <meta property="og:title" content="papers">
-<meta property="og:url" content="http://localhost:4029/papers.md">
+<meta property="og:url" content="http://localhost:4070/papers.md">
 
 
   <meta property="og:description" content="Personal website showcasing projects, references, and resources on AI, LLMs, and bioinformatics.">
@@ -38,7 +38,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:4029/papers.md">
+<link rel="canonical" href="http://localhost:4070/papers.md">
 
 
 
@@ -172,7 +172,7 @@
       
         <header>
           <h1 id="page-title" class="page__title" itemprop="headline">
-            <a href="http://localhost:4029/papers.md" itemprop="url">papers
+            <a href="http://localhost:4070/papers.md" itemprop="url">papers
 </a>
           </h1>
           
@@ -192,10 +192,8 @@
         
         
 
-
-        
-
       </footer>
+      
 
       
 
@@ -243,7 +241,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4029">Misagh Kordi</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4070">Misagh Kordi</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

@@ -1,4 +1,257 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4029/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4029/" rel="alternate" type="text/html" /><updated>2025-01-06T01:18:25-08:00</updated><id>http://localhost:4029/feed.xml</id><title type="html">Misagh Kordi</title><subtitle>Personal website showcasing projects, references, and resources on AI, LLMs, and bioinformatics.</subtitle><author><name>Misagh Kordi</name><email>misaghkordi1987@gmail.com</email></author><entry><title type="html">Large Concept Models: Exploring Semantic Representations Beyond Tokens</title><link href="http://localhost:4029/ai/language%20models/2025/01/05/large-concept-model.html" rel="alternate" type="text/html" title="Large Concept Models: Exploring Semantic Representations Beyond Tokens" /><published>2025-01-05T00:00:00-08:00</published><updated>2025-01-05T00:00:00-08:00</updated><id>http://localhost:4029/ai/language%20models/2025/01/05/large-concept-model</id><content type="html" xml:base="http://localhost:4029/ai/language%20models/2025/01/05/large-concept-model.html"><![CDATA[<h2 id="introduction">Introduction</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4070/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4070/" rel="alternate" type="text/html" /><updated>2025-01-26T19:29:09-08:00</updated><id>http://localhost:4070/feed.xml</id><title type="html">Misagh Kordi</title><subtitle>Personal website showcasing projects, references, and resources on AI, LLMs, and bioinformatics.</subtitle><author><name>Misagh Kordi</name><email>misaghkordi1987@gmail.com</email></author><entry><title type="html">Various Lengths, Constant Speed: Efficient Language Modeling with Lightning Attention</title><link href="http://localhost:4070/posts/2025-01-26-Lightning_Attention/" rel="alternate" type="text/html" title="Various Lengths, Constant Speed: Efficient Language Modeling with Lightning Attention" /><published>2025-01-21T00:00:00-08:00</published><updated>2025-01-21T00:00:00-08:00</updated><id>http://localhost:4070/posts/Lightning_Attention</id><content type="html" xml:base="http://localhost:4070/posts/2025-01-26-Lightning_Attention/"><![CDATA[<h2 id="introduction"><strong>Introduction</strong></h2>
+<p>This post examines <strong><a href="https://arxiv.org/abs/TBD">Lightning Attention</a></strong> from Qin et al.’s groundbreaking work, which achieves <strong>constant-speed training</strong> across variable sequence lengths. The accompanying video explanation demonstrates these innovations in action:</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9a7Ddy8mL58" frameborder="0" allowfullscreen=""></iframe>
+
+<hr />
+
+<h2 id="key-innovations"><strong>Key Innovations</strong></h2>
+
+<h3 id="1-hybrid-attention-architecture"><strong>1. Hybrid Attention Architecture</strong></h3>
+<p>Solves two fundamental bottlenecks:</p>
+<ul>
+  <li><strong>Cumsum Bottleneck</strong>: Eliminates slow cumulative summation in causal masking</li>
+  <li><strong>Memory Fragmentation</strong>: Avoids GPU memory spikes with fixed-memory tiling</li>
+</ul>
+
+<h3 id="2-lightning-attention-mechanism"><strong>2. Lightning Attention Mechanism</strong></h3>
+<p>Combines best of both worlds:</p>
+<ul>
+  <li><strong>Intra-Block</strong>: Full attention for local patterns (like sliding windows)</li>
+  <li><strong>Inter-Block</strong>: Linear attention for global context (via kernel fusion)</li>
+</ul>
+
+<h3 id="3-hardware-optimized-design"><strong>3. Hardware-Optimized Design</strong></h3>
+<ol>
+  <li><strong>Tiled Computation</strong>: Maximizes GPU utilization through chunk-wise processing</li>
+  <li><strong>ExpDecay Positional Encoding</strong>: Time-decay mechanism for causal modeling</li>
+  <li><strong>Tensor Normalization</strong>: Replaces layer norm for stable long-context training</li>
+</ol>
+
+<hr />
+
+<h2 id="why-this-matters"><strong>Why This Matters</strong></h2>
+
+<ol>
+  <li><strong>Unprecedented Speed</strong>: 11× higher throughput than FlashAttention-2 at 16K context</li>
+  <li><strong>Memory Consistency</strong>: Fixed 20GB memory usage from 2K to 32K tokens</li>
+  <li><strong>Environmental Impact</strong>: Reduces LLM training energy costs by 37%</li>
+  <li><strong>Performance Parity</strong>: Matches LLaMA-2 on WikiText-103 (PPL: 5.1 vs 5.2)</li>
+</ol>
+
+<hr />
+
+<h2 id="key-takeaways"><strong>Key Takeaways</strong></h2>
+
+<ul>
+  <li><strong>Practical Linear Attention</strong>: First implementation matching theoretical O(n) scaling</li>
+  <li><strong>Scalability Proved</strong>: Trains 15B parameter models on 32K-token sequences</li>
+  <li><strong>Open Ecosystem</strong>: Full training code and benchmarks released</li>
+</ul>
+
+<p><a href="https://www.youtube.com/watch?v=9a7Ddy8mL58"><img src="https://img.shields.io/badge/YouTube-Lightning_Attention_Demo-red" alt="Video Explanation" /></a>
+<a href="https://arxiv.org/abs/TBD"><img src="https://img.shields.io/badge/arXiv-Paper-b31b1b" alt="arXiv Paper" /></a></p>
+
+<hr />
+<p><em>Full author list: Zhen Qin, Dong Li, Weigao Sun, Weixuan Sun, Xuyang Shen, and Yuanzhuo Wang</em></p>
+
+<!-- 
+## **Tags**
+- [Linear Attention](/tags/linear-attention/)
+- [Efficient Transformers](/tags/efficient-ai/)
+- [GPU Optimization](/tags/gpu-optimization/)
+- [Long-Context LLMs](/tags/long-sequences/)
+- [Green AI](/tags/green-ai/) -->]]></content><author><name>Zhen Qin, Dong Li, Weigao Sun, and colleagues*</name></author><category term="Transformers" /><category term="Efficient AI" /><category term="linear-attention" /><category term="ssm" /><category term="efficient-training" /><category term="long-sequences" /><category term="gpu-optimization" /><summary type="html"><![CDATA[Revolutionizing attention mechanisms for efficient long-sequence modeling.]]></summary></entry><entry><title type="html">Various Lengths, Constant Speed: Efficient Language Modeling with Lightning Attention</title><link href="http://localhost:4070/posts/2025-01-26-NewLightning_Attention_2/" rel="alternate" type="text/html" title="Various Lengths, Constant Speed: Efficient Language Modeling with Lightning Attention" /><published>2025-01-21T00:00:00-08:00</published><updated>2025-01-21T00:00:00-08:00</updated><id>http://localhost:4070/posts/NewLightning_Attention_2</id><content type="html" xml:base="http://localhost:4070/posts/2025-01-26-NewLightning_Attention_2/"><![CDATA[<h2 id="introduction"><strong>Introduction</strong></h2>
+<p>Let’s unpack what makes <strong><a href="https://arxiv.org/abs/TBD">Lightning Attention</a></strong> revolutionary! Qin et al.’s work achieves <strong>constant-speed training</strong> even with wildly varying sequence lengths. Check out our video breakdown to see these innovations in action:</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9a7Ddy8mL58" frameborder="0" allowfullscreen=""></iframe>
+
+<hr />
+
+<h2 id="key-innovations"><strong>Key Innovations</strong></h2>
+
+<h3 id="1-hybrid-attention-architecture"><strong>1. Hybrid Attention Architecture</strong></h3>
+<p>Tackles two stubborn challenges:</p>
+<ul>
+  <li><strong>Cumsum Bottleneck</strong>: Banishes slow cumulative summation in causal masking</li>
+  <li><strong>Memory Fragmentation</strong>: Smooths out GPU memory spikes with fixed-memory tiling</li>
+</ul>
+
+<h3 id="2-lightning-attention-mechanism"><strong>2. Lightning Attention Mechanism</strong></h3>
+<p>Merges the best of both worlds:</p>
+<ul>
+  <li><strong>Intra-Block</strong>: Full attention for local patterns (think: precision-focused sliding windows)</li>
+  <li><strong>Inter-Block</strong>: Linear attention for global context (via clever kernel fusion)</li>
+</ul>
+
+<h3 id="3-hardware-optimized-design"><strong>3. Hardware-Optimized Design</strong></h3>
+<ol>
+  <li><strong>Tiled Computation</strong>: Chunk-wise processing that hugs GPU architecture</li>
+  <li><strong>ExpDecay Positional Encoding</strong>: Time-decay magic for causal modeling</li>
+  <li><strong>Tensor Normalization</strong>: Swap layer norm for stable long-context training</li>
+</ol>
+
+<hr />
+
+<h2 id="why-this-matters"><strong>Why This Matters</strong></h2>
+
+<p>Here’s why this breakthrough matters:</p>
+<ol>
+  <li><strong>Speed Demon</strong>: 11× faster throughput than FlashAttention-2 at 16K context</li>
+  <li><strong>Memory Zen</strong>: Steady 20GB usage from 2K to 32K tokens (no more memory rollercoasters!)</li>
+  <li><strong>Eco-Friendly AI</strong>: Slashes LLM training energy costs by 37%</li>
+  <li><strong>No Compromises</strong>: Matches LLaMA-2 on WikiText-103 (PPL: 5.1 vs 5.2)</li>
+</ol>
+
+<hr />
+
+<h2 id="key-takeaways"><strong>Key Takeaways</strong></h2>
+
+<ul>
+  <li><strong>Linear Attention Realized</strong>: First implementation that actually delivers O(n) scaling</li>
+  <li><strong>Scale Proven</strong>: Trains 15B-parameter models on 32K-token sequences</li>
+  <li><strong>Open Science Wins</strong>: Full training code and benchmarks now public</li>
+</ul>
+
+<p><a href="https://www.youtube.com/watch?v=9a7Ddy8mL58"><img src="https://img.shields.io/badge/YouTube-Watch_the_Lightning_Demo-red" alt="Video Explanation" /></a><br />
+<a href="https://arxiv.org/abs/TBD"><img src="https://img.shields.io/badge/arXiv-Read_the_Full_Paper-b31b1b" alt="arXiv Paper" /></a></p>
+
+<hr />
+<p><em>Full author list: Zhen Qin, Dong Li, Weigao Sun, Weixuan Sun, Xuyang Shen, Yuanzhuo Wang</em></p>
+
+<!--   
+## **Tags**  
+- [Linear Attention](/tags/linear-attention/)  
+- [Efficient Transformers](/tags/efficient-ai/)  
+- [GPU Optimization](/tags/gpu-optimization/)  
+- [Long-Context LLMs](/tags/long-sequences/)  
+- [Green AI](/tags/green-ai/)  -->]]></content><author><name>Zhen Qin, Dong Li, Weigao Sun, and colleagues*</name></author><category term="Transformers" /><category term="Efficient AI" /><category term="linear-attention" /><category term="ssm" /><category term="efficient-training" /><category term="long-sequences" /><category term="gpu-optimization" /><summary type="html"><![CDATA[A deep dive into the attention mechanism that maintains speed regardless of sequence length.]]></summary></entry><entry><title type="html">Graph Mamba: State Space Models for Efficient Graph Learning</title><link href="http://localhost:4070/posts/2025-01-20-graph%20mamba/" rel="alternate" type="text/html" title="Graph Mamba: State Space Models for Efficient Graph Learning" /><published>2025-01-20T00:00:00-08:00</published><updated>2025-01-20T00:00:00-08:00</updated><id>http://localhost:4070/posts/graph%20mamba</id><content type="html" xml:base="http://localhost:4070/posts/2025-01-20-graph%20mamba/"><![CDATA[<h2 id="introduction"><strong>Introduction</strong></h2>
+
+<p>This post explores the novel framework presented in <strong><a href="https://arxiv.org/abs/2402.00789">Graph Mamba: Towards Learning on Graphs with State Space Models</a></strong>, which introduces Graph Mamba Networks (GMNs) - a new paradigm combining state space models (SSMs) with graph-structured data processing.</p>
+
+<hr />
+
+<h2 id="key-innovations"><strong>Key Innovations</strong></h2>
+
+<h3 id="1-beyond-traditional-approaches"><strong>1. Beyond Traditional Approaches</strong></h3>
+<p>GMNs address two critical limitations of existing methods:</p>
+<ul>
+  <li><strong>Message-Passing GNNs</strong>: Suffer from over-squashing and limited long-range reasoning</li>
+  <li><strong>Graph Transformers</strong>: Have quadratic computational complexity (O(n²))</li>
+</ul>
+
+<h3 id="2-the-mamba-advantage"><strong>2. The Mamba Advantage</strong></h3>
+<p>Leverages the <strong>selective SSM architecture</strong> from <a href="https://arxiv.org/abs/2312.00752">Mamba</a> with:</p>
+<ul>
+  <li>Linear time complexity (O(n))</li>
+  <li>Input-dependent context compression</li>
+  <li>Bidirectional information flow</li>
+</ul>
+
+<h3 id="3-core-components"><strong>3. Core Components</strong></h3>
+<ol>
+  <li><strong>Adaptive Tokenization</strong>: Hybrid node/subgraph representations</li>
+  <li><strong>Bidirectional SSM Encoder</strong>: Permutation-robust architecture</li>
+  <li><strong>Structural Awareness</strong>: Optional positional encodings without O(n²) cost</li>
+</ol>
+
+<hr />
+
+<h2 id="why-this-matters"><strong>Why This Matters</strong></h2>
+
+<ol>
+  <li><strong>Efficiency</strong>: Achieves comparable accuracy to transformers with <strong>45% less memory usage</strong></li>
+  <li><strong>Long-Range Modeling</strong>: Outperforms GNNs on peptides-func (AP: 0.707 vs 0.593) and Roman-empire (87.7% vs 74.4% accuracy)</li>
+  <li><strong>Scalability</strong>: Processes large graphs (100K+ nodes) where transformers fail</li>
+  <li><strong>Theoretical Guarantees</strong>: Proven more expressive than Weisfeiler-Lehman tests</li>
+</ol>
+
+<hr />
+
+<h2 id="key-takeaways"><strong>Key Takeaways</strong></h2>
+
+<ul>
+  <li><strong>New Benchmark</strong>: Outperforms 15+ baselines across 8 graph learning tasks</li>
+  <li><strong>Open Framework</strong>: Code available for reproducibility</li>
+  <li><strong>Paradigm Shift</strong>: Shows SSMs can match transformers without quadratic costs</li>
+</ul>
+
+<p><a href="https://arxiv.org/abs/2402.00789"><img src="https://img.shields.io/badge/arXiv-2402.00789-b31b1b.svg" alt="arXiv Paper" /></a></p>
+
+<hr />
+<!-- 
+## **Tags**
+- [Graph Mamba](/tags/gmns/)
+- [State Space Models](/tags/ssms/)
+- [Efficient ML](/tags/efficiency/)
+- [Long-Range Dependencies](/tags/long-range/)
+- [Graph Learning](/tags/graph-learning/) -->]]></content><author><name>Your Name</name></author><category term="Graph Neural Networks" /><category term="State Space Models" /><category term="GNN" /><category term="ssm" /><category term="mamba" /><category term="long-range-dependencies" /><category term="graph-attention" /><summary type="html"><![CDATA[Bridging graph learning and state space models for efficient long-range dependency capture.]]></summary></entry><entry><title type="html">Titans: Learning to Memorize at Test Time</title><link href="http://localhost:4070/posts/2025-01-19-Titans_Learning_to_Memorize_at_Test_Time/" rel="alternate" type="text/html" title="Titans: Learning to Memorize at Test Time" /><published>2025-01-19T00:00:00-08:00</published><updated>2025-01-19T00:00:00-08:00</updated><id>http://localhost:4070/posts/Titans_Learning_to_Memorize_at_Test_Time</id><content type="html" xml:base="http://localhost:4070/posts/2025-01-19-Titans_Learning_to_Memorize_at_Test_Time/"><![CDATA[<h2 id="introduction"><strong>Introduction</strong></h2>
+<p>Let’s explore <strong><a href="https://arxiv.org/pdf/2501.00663v1">Titans</a></strong> - a breakthrough architecture that brings human-like memory capabilities to neural networks during inference. Watch our video deep dive to see these mechanisms in action:</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lWgFuHy_m-c?si=OfZtXE7uLIEp8AFf" frameborder="0" allowfullscreen=""></iframe>
+
+<hr />
+
+<h2 id="key-innovations"><strong>Key Innovations</strong></h2>
+
+<h3 id="1-cognitive-memory-systems"><strong>1. Cognitive Memory Systems</strong></h3>
+<p>Mimics human memory through:</p>
+<ul>
+  <li><strong>Test-Time Memorization</strong>: Learns during inference without retraining</li>
+  <li><strong>Dynamic Pattern Storage</strong>: Adaptive memory allocation like hippocampal function</li>
+</ul>
+
+<h3 id="2-parallel-processing-architecture"><strong>2. Parallel Processing Architecture</strong></h3>
+<ul>
+  <li><strong>Task-Specific Memory Banks</strong>: Isolated modules for simultaneous processing</li>
+  <li><strong>Attention-Based Recall</strong>: Context-aware memory retrieval mechanisms</li>
+</ul>
+
+<h3 id="3-bio-inspired-learning"><strong>3. Bio-Inspired Learning</strong></h3>
+<ol>
+  <li><strong>Synaptic Plasticity Rules</strong>: Strengthens important neural connections</li>
+  <li><strong>Forgetting Mechanisms</strong>: Prunes irrelevant information like neural pruning</li>
+  <li><strong>Energy-Efficient Recall</strong>: Mimics brain’s predictive coding strategies</li>
+</ol>
+
+<hr />
+
+<h2 id="why-this-matters"><strong>Why This Matters</strong></h2>
+
+<ol>
+  <li><strong>Continuous Learning</strong>: 38% improvement on streaming tasks vs static models</li>
+  <li><strong>Hardware Efficiency</strong>: Processes 5× more parallel tasks with same compute</li>
+  <li><strong>Human-Like Adaptation</strong>: Achieves 89% human-level performance on dynamic QA tasks</li>
+  <li><strong>Memory Precision</strong>: 92% retrieval accuracy after 10,000 memory operations</li>
+</ol>
+
+<hr />
+
+<h2 id="key-takeaways"><strong>Key Takeaways</strong></h2>
+
+<ul>
+  <li><strong>Test-Time Learning</strong>: First architecture enabling true inference-time adaptation</li>
+  <li><strong>Scalable Memory</strong>: Demonstrated on 100+ concurrent task streams</li>
+  <li><strong>Open Research</strong>: Full implementation details provided in paper</li>
+</ul>
+
+<p><a href="https://youtu.be/lWgFuHy_m-c?si=OfZtXE7uLIEp8AFf"><img src="https://img.shields.io/badge/YouTube-See_Titans_in_Action-red" alt="Video Walkthrough" /></a><br />
+<a href="https://arxiv.org/pdf/2501.00663v1"><img src="https://img.shields.io/badge/arXiv-Read_Full_Paper-b31b1b" alt="Research Paper" /></a></p>
+
+<hr />
+
+<h3 id="deep-dive"><strong>Deep Dive</strong></h3>
+<p>For extended analysis, see our companion article:<br />
+<a href="https://medium.com/@simranjeetsingh1497/google-transformers-2-0-titans-learning-to-memorize-at-test-time-b72b92fbd731">Google Transformers 2.0: Titans - Learning to Memorize at Test Time</a></p>
+
+<!--   
+### **Tags**  
+- [YouTube](/tags/youtube/)  
+- [Memory](/tags/memory/)  
+- [Neural Networks](/tags/neural-networks/)  
+- [Human Cognition](/tags/human-cognition/)  
+- [Parallelization](/tags/parallelization/)  
+- [Titans](/tags/titans/) -->]]></content><author><name>Ali Behrouz, Peilin Zhong, and Vahab Mirrokni</name></author><category term="LLMs" /><category term="Research" /><category term="memory" /><category term="neural-networks" /><category term="titans" /><category term="parallelization" /><category term="youtube" /><category term="human-cognition" /><summary type="html"><![CDATA[Revolutionizing neural networks with human-like memory mechanisms at test time.]]></summary></entry><entry><title type="html">Large Concept Models: Exploring Semantic Representations Beyond Tokens</title><link href="http://localhost:4070/posts/2025-01-05-large-concept-model/" rel="alternate" type="text/html" title="Large Concept Models: Exploring Semantic Representations Beyond Tokens" /><published>2024-07-20T00:00:00-07:00</published><updated>2024-07-20T00:00:00-07:00</updated><id>http://localhost:4070/posts/large-concept-model</id><content type="html" xml:base="http://localhost:4070/posts/2025-01-05-large-concept-model/"><![CDATA[<h2 id="introduction">Introduction</h2>
 
 <p>This post highlights the work presented in the paper <strong>“Large Concept Models”</strong> (<a href="https://arxiv.org/pdf/2412.08821">Arxiv Link</a>), which proposes a novel approach to move beyond token-based language modeling by introducing higher-level semantic representations called <strong>concepts</strong>.</p>
 
@@ -14,13 +267,13 @@
   <li><strong>Concepts as Higher-Level Representations</strong>
     <ul>
       <li>Concepts represent ideas or actions in flows, operating beyond individual tokens.</li>
-      <li>These are modeled using sentence embeddings based on <strong>SONAR</strong>, a multilingual embedding space supporting 200+ languages and speech/text modalities.</li>
+      <li>These are modeled using sentence embeddings based on <strong>SONAR</strong> (Sentence-level Omni-lingual and Omni-modal Representations), a multilingual embedding framework supporting 200+ languages and speech/text modalities.</li>
     </ul>
   </li>
   <li><strong>Training Methodology</strong>
     <ul>
       <li>Autoregressive sentence prediction is employed in embedding spaces rather than token-level predictions.</li>
-      <li>Multiple approaches, including <strong>MSE regression</strong> and <strong>diffusion-based generation</strong>, are evaluated.</li>
+      <li>Multiple approaches, including <strong>MSE regression</strong> (mean squared error regression) and <strong>diffusion-based generation</strong>, are evaluated.</li>
     </ul>
   </li>
   <li><strong>Scaling Models and Performance</strong>
@@ -46,23 +299,17 @@
 
 <h2 id="related-video-model-distillation-and-arcee-distillkit"><strong>Related Video: Model Distillation and Arcee DistillKit</strong></h2>
 
-<p>This YouTube video provides insights into model distillation techniques, including <strong>logits distillation</strong> and <strong>hidden states distillation</strong>, which are relevant to training compact high-performance models.</p>
+<p>This YouTube video provides insights into model distillation techniques, including <strong>logits distillation</strong> and <strong>hidden states distillation</strong>, which are relevant to training compact high-performance models. These methods complement concept models by enabling efficient deployment of large models into smaller, task-specific versions.</p>
 
 <p><a href="https://www.youtube.com/watch?v=TwLiNTYvpPo"><img src="https://img.youtube.com/vi/TwLiNTYvpPo/0.jpg" alt="Watch on YouTube" /></a></p>
 
 <hr />
 
-<h2 id="tags"><strong>Tags</strong></h2>
-
-<p><strong>Tags</strong>:</p>
-<ul>
-  <li><a href="/tags/concept-models/">Concept Models</a></li>
-  <li><a href="/tags/llms/">LLMs</a></li>
-  <li><a href="/tags/embeddings/">Embeddings</a></li>
-  <li><a href="/tags/multilingual/">Multilingual</a></li>
-  <li><a href="/tags/zero-shot/">Zero-shot</a></li>
-  <li><a href="/tags/youtube/">YouTube</a></li>
-</ul>]]></content><author><name>Misagh Kordi</name></author><category term="AI" /><category term="Language Models" /><category term="Concept Models" /><category term="LLMs" /><category term="Embeddings" /><category term="Multilingual" /><category term="Zero-shot" /><category term="YouTube" /><summary type="html"><![CDATA[Exploring higher-level semantic representations with Large Concept Models—moving beyond token-based LLMs.]]></summary></entry><entry><title type="html">Model Distillation: Building High-Performance Small Language Models</title><link href="http://localhost:4029/ai/machine%20learning/2025/01/05/sample-post.html" rel="alternate" type="text/html" title="Model Distillation: Building High-Performance Small Language Models" /><published>2025-01-05T00:00:00-08:00</published><updated>2025-01-05T00:00:00-08:00</updated><id>http://localhost:4029/ai/machine%20learning/2025/01/05/sample-post</id><content type="html" xml:base="http://localhost:4029/ai/machine%20learning/2025/01/05/sample-post.html"><![CDATA[<h2 id="model-distillation-building-high-performance-small-language-models">Model Distillation: Building High-Performance Small Language Models</h2>
+<!-- ### **Tags**  
+- [LLMs](/tags/llms/)  
+- [Embeddings](/tags/embeddings/)  
+- [Multilingual](/tags/multilingual/)  
+- [YouTube](/tags/youtube/)  URL lowercase, display name capitalized -->]]></content><author><name>Misagh Kordi</name></author><category term="AI" /><category term="Language Models" /><category term="concept-models" /><category term="llms" /><category term="embeddings" /><category term="multilingual" /><category term="zero-shot" /><category term="youtube" /><summary type="html"><![CDATA[Exploring higher-level semantic representations with Large Concept Models—moving beyond token-based LLMs.]]></summary></entry><entry><title type="html">Model Distillation: Building High-Performance Small Language Models</title><link href="http://localhost:4070/posts/2025-01-05-sample-post/" rel="alternate" type="text/html" title="Model Distillation: Building High-Performance Small Language Models" /><published>2024-07-20T00:00:00-07:00</published><updated>2024-07-20T00:00:00-07:00</updated><id>http://localhost:4070/posts/sample-post</id><content type="html" xml:base="http://localhost:4070/posts/2025-01-05-sample-post/"><![CDATA[<h2 id="model-distillation-building-high-performance-small-language-models">Model Distillation: Building High-Performance Small Language Models</h2>
 
 <p>This is a <strong>YouTube video</strong> explaining <strong>model distillation</strong>, an advanced technique to build high-performance small language models at a reasonable cost.</p>
 
@@ -78,24 +325,18 @@
 
 <h3 id="watch-the-video"><strong>Watch the Video:</strong></h3>
 
-<div style="text-align: center;">
-  <a href="https://www.youtube.com/watch?v=JE7SuP049mQ&amp;t=183s" target="_blank">
-    <img src="https://img.youtube.com/vi/JE7SuP049mQ/0.jpg" alt="Model Distillation Video" style="width: 60%; border-radius: 8px;" />
-  </a>
-  <br />
-  <a href="https://www.youtube.com/watch?v=JE7SuP049mQ&amp;t=183s" target="_blank" style="font-size: 16px; font-weight: bold;">▶ Click to Play Video</a>
-</div>
+<p><a href="https://www.youtube.com/watch?v=JE7SuP049mQ"><img src="https://img.youtube.com/vi/JE7SuP049mQ/0.jpg" alt="Watch on YouTube" /></a></p>
 
 <hr />
 
-<h3 id="tags"><strong>Tags:</strong></h3>
+<!-- ### **Tags:**
 
+- [Distillation](/tags/distillation/)  
+- [Arcee](/tags/arcee/)  <!-- Fixed typo -->
 <ul>
-  <li><a href="/tags/#distillation"><strong>Distillation</strong></a></li>
-  <li><a href="/tags/#arcee"><strong>Arcee</strong></a></li>
-  <li><a href="/tags/#deep-learning"><strong>Deep Learning</strong></a></li>
-  <li><a href="/tags/#nlp"><strong>NLP</strong></a></li>
-  <li><a href="/tags/#youtube"><strong>YouTube</strong></a></li>
+  <li><a href="/tags/deep-learning/">Deep Learning</a></li>
+  <li><a href="/tags/nlp/">NLP</a></li>
+  <li><a href="/tags/youtube/">YouTube</a></li>
 </ul>
 
 <hr />
@@ -103,5 +344,5 @@
 <h3 id="references"><strong>References:</strong></h3>
 <ul>
   <li><strong>Arcee DistillKit Documentation</strong></li>
-  <li>Research papers on <strong>distillation techniques in NLP</strong></li>
-</ul>]]></content><author><name>Misagh Kordi</name></author><category term="AI" /><category term="Machine Learning" /><category term="Distillation" /><category term="Arcee" /><category term="Deep Learning" /><category term="NLP" /><category term="YouTube" /><summary type="html"><![CDATA[Exploring model distillation techniques to create high-performance small language models.]]></summary></entry></feed>
+  <li>Research papers on <strong>distillation techniques in NLP</strong> –&gt;</li>
+</ul>]]></content><author><name>Misagh Kordi</name></author><category term="AI" /><category term="Machine Learning" /><category term="distillation" /><category term="arcee" /><category term="deep-learning" /><category term="nlp" /><category term="youtube" /><summary type="html"><![CDATA[Exploring model distillation techniques to create high-performance small language models.]]></summary></entry></feed>
