@@ -6,7 +6,7 @@ categories: [Transformers, Efficient AI]
 tags: [linear-attention, ssm, efficient-training, long-sequences, gpu-optimization]  
 author: "Zhen Qin, Dong Li, Weigao Sun, and colleagues*"  
 header:  
-  overlay_image: /assets/images/lightning-attention.png
+  overlay_image: assets/images/lightning-attention.png
   overlay_filter: 0.5  
   caption: "Image credit: Qin et al. 2024 (Lightning Attention Paper)"  
 excerpt: "A deep dive into the attention mechanism that maintains speed regardless of sequence length."  

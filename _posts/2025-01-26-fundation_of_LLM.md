@@ -6,7 +6,7 @@ categories: [Large Language Models, NLP]
 tags: [LLM, pre-training, prompting, alignment, generative AI]
 author: "Tong Xiao and Jingbo Zhu"
 header:
-  overlay_image: /assets/images/fundation_of_llm.png
+  overlay_image: assets/images/fundation_of_llm.png
   overlay_filter: 0.5
   caption: "Image credit: ArXiv Paper 2501.09223"
 excerpt: "An in-depth exploration of the foundational principles behind large language models, including pre-training, prompting, generative techniques, and alignment methods."

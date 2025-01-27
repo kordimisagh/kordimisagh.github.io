@@ -6,7 +6,7 @@ categories: [Graph Neural Networks, State Space Models]
 tags: [GNN, ssm, mamba, long-range-dependencies, graph-attention]
 author: "Ali Behrouz and Farnoosh Hashemi"
 header:
-  overlay_image: /assets/images/graph_mamba.png
+  overlay_image: assets/images/graph_mamba.png
   overlay_filter: 0.5
   caption: "Image credit: Arxiv Paper 2402.00789"
 excerpt: "Bridging graph learning and state space models for efficient long-range dependency capture."

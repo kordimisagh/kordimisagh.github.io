@@ -6,7 +6,7 @@ categories: [AI, Language Models]
 tags: [concept-models, llms, embeddings, multilingual, zero-shot, youtube]
 author: "Misagh Kordi"
 header:
-  overlay_image: /assets/images/Large_Concept_Models.png
+  overlay_image: assets/images/Large_Concept_Models.png
   overlay_filter: 0.5
   caption: "Image source: arXiv:2412.08821"  # Corrected credit
 excerpt: "Exploring higher-level semantic representations with Large Concept Models—moving beyond token-based LLMs."

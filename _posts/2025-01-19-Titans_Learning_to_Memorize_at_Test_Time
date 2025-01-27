@@ -6,7 +6,7 @@ categories: [LLMs, Research]
 tags: [memory, neural-networks, titans, parallelization, youtube, human-cognition]  
 author: "Ali Behrouz, Peilin Zhong, and Vahab Mirrokni"  
 header:  
-  overlay_image: /assets/images/Titans.png 
+  overlay_image: assets/images/Titans.png 
   overlay_filter: 0.5  
   caption: "Photo credit: Unsplash"  
   actions:  

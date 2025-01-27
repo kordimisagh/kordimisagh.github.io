@@ -6,7 +6,7 @@ categories: [Graph Neural Networks, Hybrid Models]
 tags: [GNN, Transformers, SSM, hybrid-models, graph-learning]
 author: "Ali Behrouz, Ali Parviz, Mahdi Karami, Clayton Sanford, Bryan Perozzi, Vahab Mirrokni"
 header:
-  overlay_image: /assets/images/GSM.png
+  overlay_image: assets/images/GSM.png
   overlay_filter: 0.5
   caption: "Image credit: Best of Both Worlds Preprint"
 excerpt: "Combining state space models and Transformers for efficient graph sequence learning."
